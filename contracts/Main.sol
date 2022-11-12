@@ -12,7 +12,7 @@ contract Avator is ERC721 {
     Counters.Counter private _tokenIds;
 
     mapping(address => bool[4]) public whitelistUsedState; // 白单使用情况
-    mapping(uint => uint) tokenLvType; // 记录token的类型
+    mapping(uint => uint) public tokenLvType; // 记录token的类型
     mapping(address => uint) userMintedAmount; // 记录mint情况
     mapping(uint => uint) tokenWear; // 记录磨损情况
 
